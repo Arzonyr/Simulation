@@ -51,11 +51,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\CreditsScript.cs" />
      <Compile Include="Assets\Scripts\AktivateUpgradeButton.cs" />
+     <Compile Include="Assets\Scripts\BackButtonScript.cs" />
      <Compile Include="Assets\Scripts\buttonScript.cs" />
+     <Compile Include="Assets\Scripts\ButtonStartGame.cs" />
      <Compile Include="Assets\Scripts\LayerControll.cs" />
      <Compile Include="Assets\Scripts\OnMouse.cs" />
      <Compile Include="Assets\Scripts\PanelControllScript.cs" />
+     <Compile Include="Assets\Scripts\QuitScript.cs" />
      <Compile Include="Assets\Scripts\SignScript.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
