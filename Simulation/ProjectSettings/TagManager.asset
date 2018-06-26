@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Sign
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - InGame
+  - SignUpgrade
+  - Foreground
+  - House
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Foreground
+    uniqueID: 634205463
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: InGame
+    uniqueID: 569022443
+    locked: 0
+  - name: SignUpgrade
+    uniqueID: 820989243
+    locked: 0
