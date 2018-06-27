@@ -4,7 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - WayPoint
+  - Sign
   layers:
   - Default
   - TransparentFX
@@ -14,10 +14,10 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - InGame
+  - SignUpgrade
+  - Foreground
+  - House
   - 
   - 
   - 
@@ -39,6 +39,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Foreground
+    uniqueID: 634205463
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: InGame
+    uniqueID: 569022443
+    locked: 0
+  - name: SignUpgrade
+    uniqueID: 820989243
     locked: 0
