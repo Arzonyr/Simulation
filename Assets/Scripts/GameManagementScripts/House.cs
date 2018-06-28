@@ -8,42 +8,61 @@ public class House : MyMonoBehaviour {
     public ResourceType ProductionResource;
     private Resource resource;
     public int ProductionAmount;
+    public int ResourceGain
+    {
+        get
+        {
+            return ResourceGenerationFormula();
+        }
+    }
     public float ProductionMultiplier;
     public float UpgradeCostMultiplier;
     public int HouseLevel;
-    public ResourceType[] UpgradeResourcesTypes;
-    public int[] UpgradeCosts;
+    public List<ResourceType> UpgradeResourcesTypes = new List<ResourceType>();
+    public List<int> UpgradeCosts = new List<int>();
+    public int IronUpgradeCost;
+    public int FoodUpgradeCost;
     public int PopulationGainOnUpgrade;
 
     private bool firstUpdate = true;
-    private Resource[] UpgradeResources;
+    private List <Resource> UpgradeResources = new List<Resource>();
 
     void Update () {
         if (firstUpdate)
         {
             firstUpdate = false;
-            UpgradeResources = new Resource[UpgradeResourcesTypes.Length];
-            foreach (var resources in gameManager.Resources)
+            for (int i = 0; i < UpgradeResourcesTypes.Count; i++)
             {
-                if (resources.OwnResourceType.Equals(ProductionResource))
-                {
-                    resource = resources;
-                }
-                for (int i = 0; i < UpgradeResourcesTypes.Length; i++)
+                foreach (var resources in gameManager.Resources)
                 {
                     if (resources.OwnResourceType.Equals(UpgradeResourcesTypes[i]))
                     {
-                        UpgradeResources[i] = resources;
+                        UpgradeResources.Add(resources);
+                    }
+                    if (resources.OwnResourceType.Equals(ProductionResource))
+                    {
+                        resource = resources;
                     }
                 }
+            }
+            gameManager.UpgradePanel.SetActive(false);
+            if (ProductionResource.Equals(ResourceType.IRON) || ProductionResource.Equals(ResourceType.FOOD))
+            {
+                gameObject.SetActive(false);
             }
         }
 	}
 
     public void CollectResource()
     {
-        if (!(ProductionResource.Equals(ResourceType.COAL)))
-        resource.AddResources(ResourceGenerationFormula());
+        if (!(ProductionResource.Equals(ResourceType.COAL) || ProductionResource.Equals(ResourceType.FOOD)|| ProductionResource.Equals(ResourceType.IRON)))
+        {
+            resource.AddResources(ResourceGenerationFormula());
+        }
+        else if(ProductionResource.Equals(ResourceType.IRON) && gameManager.Population.TownLevel > 1)
+        {
+            resource.AddResources(ResourceGenerationFormula());
+        }
     }
 
     public int ResourceGenerationFormula()
@@ -55,7 +74,7 @@ public class House : MyMonoBehaviour {
     {
         if (TryUpgrade())
         {
-            for (int i = 0; i < UpgradeResources.Length; i++)
+            for (int i = 0; i < UpgradeResources.Count; i++)
             {
                 UpgradeResources[i].RemoveResources(UpgradeCosts[i]);
             }
@@ -72,26 +91,28 @@ public class House : MyMonoBehaviour {
 
     private void OnUpgrade()
     {
-        HouseLevel++;
-        if(ProductionResource.Equals(ResourceType.COAL))
+        if (ProductionResource.Equals(ResourceType.COAL) || ProductionResource.Equals(ResourceType.FOOD)) 
         {
             resource.AddResources(ResourceGenerationFormula());
         }
         gameManager.GainPopulation(PopulationGainOnUpgrade);
+        HouseLevel++;
         ChangeUpgradeCosts();
+        gameManager.HouseUpgrader.UpdateUpgradeText();
     }
 
     private bool TryUpgrade()
     {
-        if(UpgradeResourcesTypes.Length != UpgradeCosts.Length)
+        if(UpgradeResourcesTypes.Count != UpgradeCosts.Count)
         {
             Debug.LogError("Upgrade resources and costs have to be the same size! /@" + ProductionResource.ToString());
             return false;
         }
         else
         {
-            for (int i = 0; i < UpgradeResources.Length; i++)
+            for (int i = 0; i < UpgradeResources.Count; i++)
             {
+                Debug.Log("Resource: " + UpgradeResources[i] + " cost: " + UpgradeCosts[i]);
                 if (!UpgradeResources[i].CheckForSufficientResources(UpgradeCosts[i])) return false;
             }
             return true;
@@ -100,9 +121,17 @@ public class House : MyMonoBehaviour {
 
     private void ChangeUpgradeCosts()
     {
-        for (int i = 0; i < UpgradeCosts.Length; i++)
+        for (int i = 0; i < UpgradeCosts.Count; i++)
         {
-            UpgradeCosts[i] =(int)(UpgradeCosts[i]* UpgradeCostMultiplier);
+            UpgradeCosts[i] =(int)(UpgradeCosts[i]/(HouseLevel-1)*UpgradeCostMultiplier*HouseLevel);
         }
     }
+
+    private void OnMouseDown()
+    {
+        gameManager.UpgradePanel.SetActive(true);
+        gameManager.HouseUpgrader.CurrentlyClicked = this;
+        gameManager.HouseUpgrader.OnHouseSelected();
+    }
+
 }

@@ -14,14 +14,16 @@ public class GameManagerScript : MonoBehaviour {
     public Upgrader HouseUpgrader;
     public float TimeBetweenResourceCollection = 5;
     public int[] PopulationMilestones;
-    public LayerMask HouseLayer;
-    public Animator UpgradePanelAnimator;
+    public int VillagerPerPopulationAmount;
+    public GameObject[] LevelUpResources;
+    public GameObject UpgradePanel;
     public AudioSource BackgroundMusicSource;
     public AudioClip BackgroundMusic;
+    public int ResourceCheat;
     public bool Pause = false;
 
-    private bool upgradePanelEnabled = false;
     private int reachedMilestones = 0;
+    private int NPCCount = 1;
 
 	void Start ()
     {
@@ -32,27 +34,7 @@ public class GameManagerScript : MonoBehaviour {
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.P)) Pause = !Pause;
-
-        if (Input.GetButtonDown("Fire1"))
-        {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit rayHit;
-            if (Physics.Raycast(ray,out rayHit,100,HouseLayer))
-            {
-                if(rayHit.collider.tag != "OverlayButton")
-                {
-                    HouseUpgrader.CurrentlyClicked = rayHit.collider.GetComponent<House>();
-                    HouseUpgrader.OnHouseSelected();
-                    UpgradePanelAnimator.SetTrigger("New Trigger");
-                    upgradePanelEnabled = true;
-                }
-            }
-            else if(upgradePanelEnabled == true)
-            {
-                HouseUpgrader.OnHouseDeselected();
-                upgradePanelEnabled = false;
-            }
-        }
+        if (Input.GetKeyDown(KeyCode.R)) CollectResources(ResourceCheat);
     }
 
     IEnumerator CollectResourceRoutine()
@@ -76,6 +58,14 @@ public class GameManagerScript : MonoBehaviour {
         }
     }
 
+    private void CollectResources(int times)
+    {
+        for (int i = 0; i < times; i++)
+        {
+            CollectResources();
+        }
+    }
+
     private void UpdateOverlayManually()
     {
         foreach (var resource in Resources)
@@ -89,7 +79,6 @@ public class GameManagerScript : MonoBehaviour {
         switch (Script.OwnScriptType)
         {
             case MyMonoBehaviour.ScriptType.DEFAULT:
-                Debug.LogError("unspecified script detected");
                 break;
             case MyMonoBehaviour.ScriptType.HOUSE:
                 Houses.Add((House)Script);
@@ -121,8 +110,14 @@ public class GameManagerScript : MonoBehaviour {
         Population.AddResources(amount);
         if(reachedMilestones < PopulationMilestones.Length && Population.Amount >= PopulationMilestones[reachedMilestones])
         {
+            LevelUpResources[reachedMilestones].SetActive(true);
             reachedMilestones++;
             Population.LevelUp();
+        }
+        if(Population.Amount/VillagerPerPopulationAmount > NPCCount)
+        {
+            NPCCount++;
+            Population.SpawnNPC();
         }
     }
 

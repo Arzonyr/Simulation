@@ -42,7 +42,7 @@ public class Resource : MyMonoBehaviour {
 
     public bool CheckForSufficientResources(int cost)
     {
-        if (Amount >= cost) return true;
+        if (Amount >= cost || cost == 0) return true;
         return false;
     }
 }

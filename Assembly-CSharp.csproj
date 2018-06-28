@@ -63,6 +63,7 @@
     <Compile Include="Assets\Assests\Medieval_Toon_Character\Source\Scripts\Character_Animations.cs" />
     <Compile Include="Assets\Assests\Medieval_Toon_Character\Source\Scripts\FaceAnimations.cs" />
     <Compile Include="Assets\Assests\Medieval_Toon_Character\Source\Scripts\PlayFaceAnimations.cs" />
+    <Compile Include="Assets\Scripts\GameManagementScripts\FloorScript.cs" />
     <Compile Include="Assets\Scripts\GameManagementScripts\GameManagerScript.cs" />
     <Compile Include="Assets\Scripts\GameManagementScripts\House.cs" />
     <Compile Include="Assets\Scripts\GameManagementScripts\MyMonoBehaviour.cs" />

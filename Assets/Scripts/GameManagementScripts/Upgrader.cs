@@ -13,8 +13,8 @@ public class Upgrader : MyMonoBehaviour
     {
         if (CurrentlyClicked != null)
         {
-            if (CurrentlyClicked.ProductionResource.Equals(MyMonoBehaviour.ResourceType.COAL)) DescriptionText.text = "Name: " + CurrentlyClicked.name + " [Level " + CurrentlyClicked.HouseLevel + "]\n\nResource: COAL";
-            else DescriptionText.text = "Name: " + CurrentlyClicked.name + " [Level " + CurrentlyClicked.HouseLevel + "]\n\nResource gain: " +CurrentlyClicked.ProductionAmount+" "+ CurrentlyClicked.ProductionResource +" every "+gameManager.TimeBetweenResourceCollection+" seconds";
+            if (CurrentlyClicked.ProductionResource.Equals(MyMonoBehaviour.ResourceType.COAL)|| CurrentlyClicked.ProductionResource.Equals(MyMonoBehaviour.ResourceType.FOOD)) DescriptionText.text = "Name: " + CurrentlyClicked.name + " [Level " + CurrentlyClicked.HouseLevel + "]\n\nResource gain: " + CurrentlyClicked.ResourceGain + " " + CurrentlyClicked.ProductionResource + " on upgrade";
+            else DescriptionText.text = "Name: " + CurrentlyClicked.name + " [Level " + CurrentlyClicked.HouseLevel + "]\n\nResource gain: " +CurrentlyClicked.ResourceGain+" "+ CurrentlyClicked.ProductionResource +" every "+gameManager.TimeBetweenResourceCollection+" seconds";
         }
         else DescriptionText.text = "";
     }
@@ -24,7 +24,7 @@ public class Upgrader : MyMonoBehaviour
         if (CurrentlyClicked != null)
         {
             string temp = "Upgrade Cost:\n";
-            for (int i = 0; i < CurrentlyClicked.UpgradeResourcesTypes.Length; i++)
+            for (int i = 0; i < CurrentlyClicked.UpgradeResourcesTypes.Count; i++)
             {
                 temp = temp + "\n" + CurrentlyClicked.UpgradeResourcesTypes[i].ToString() + ": " + CurrentlyClicked.UpgradeCosts[i];
             }
@@ -48,6 +48,14 @@ public class Upgrader : MyMonoBehaviour
     public void OnClickUpgrade()
     {
         CurrentlyClicked.UpgradeHouse();
+        SetDescriptionText();
+        SetCostsText();
+    }
+
+    public void UpdateUpgradeText()
+    {
+        SetDescriptionText();
+        SetCostsText();
     }
 
 }
