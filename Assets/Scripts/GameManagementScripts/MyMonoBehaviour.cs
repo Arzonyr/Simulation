@@ -6,8 +6,8 @@ public abstract class MyMonoBehaviour : MonoBehaviour {
 
     protected GameManagerScript gameManager;
 
-    public enum ScriptType { DEFAULT, HOUSE, RESOURCE}
-    public enum ResourceType { DEFAULT, STONE, WOOD, GOLD, IRON, FOOD, COAL, PEOPLE }
+    public enum ScriptType { DEFAULT, HOUSE, RESOURCE, UPGRADER}
+    public enum ResourceType { DEFAULT, STONE, WOOD, GOLD, IRON, FOOD, COAL, POPULATION }
 
     public ScriptType OwnScriptType;
 

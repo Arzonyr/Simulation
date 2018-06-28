@@ -67,7 +67,9 @@
     <Compile Include="Assets\Scripts\GameManagementScripts\House.cs" />
     <Compile Include="Assets\Scripts\GameManagementScripts\MyMonoBehaviour.cs" />
     <Compile Include="Assets\Scripts\GameManagementScripts\NPC.cs" />
+    <Compile Include="Assets\Scripts\GameManagementScripts\PopulationManager.cs" />
     <Compile Include="Assets\Scripts\GameManagementScripts\Resource.cs" />
+    <Compile Include="Assets\Scripts\GameManagementScripts\Upgrader.cs" />
     <Compile Include="Assets\Scripts\UIScripts\AktivateUpgradeButton.cs" />
     <Compile Include="Assets\Scripts\UIScripts\BackButtonScript.cs" />
     <Compile Include="Assets\Scripts\UIScripts\buttonScript.cs" />
@@ -75,7 +77,6 @@
     <Compile Include="Assets\Scripts\UIScripts\CreditsScript.cs" />
     <Compile Include="Assets\Scripts\UIScripts\LayerControll.cs" />
     <Compile Include="Assets\Scripts\UIScripts\OnMouse.cs" />
-    <Compile Include="Assets\Scripts\UIScripts\PanelControllScript.cs" />
     <Compile Include="Assets\Scripts\UIScripts\QuitScript.cs" />
     <Compile Include="Assets\Scripts\UIScripts\SignScript.cs" />
     <None Include="Assets\Assests\Medieval_Toon_Character\ReadMe.txt" />

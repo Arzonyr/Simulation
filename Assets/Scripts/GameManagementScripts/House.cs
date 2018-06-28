@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class House : MyMonoBehaviour {
 
+    public string Name;
     public ResourceType ProductionResource;
     private Resource resource;
     public int ProductionAmount;
@@ -12,6 +13,7 @@ public class House : MyMonoBehaviour {
     public int HouseLevel;
     public ResourceType[] UpgradeResourcesTypes;
     public int[] UpgradeCosts;
+    public int PopulationGainOnUpgrade;
 
     private bool firstUpdate = true;
     private Resource[] UpgradeResources;
@@ -40,7 +42,7 @@ public class House : MyMonoBehaviour {
 
     public void CollectResource()
     {
-        if (!(ProductionResource.Equals(ResourceType.COAL) || ProductionResource.Equals(ResourceType.PEOPLE)))
+        if (!(ProductionResource.Equals(ResourceType.COAL)))
         resource.AddResources(ResourceGenerationFormula());
     }
 
@@ -49,7 +51,7 @@ public class House : MyMonoBehaviour {
         return (int)(ProductionAmount * HouseLevel * ProductionMultiplier);
     }
 
-    public void UpgradeHouse()
+    public bool UpgradeHouse()
     {
         if (TryUpgrade())
         {
@@ -58,21 +60,24 @@ public class House : MyMonoBehaviour {
                 UpgradeResources[i].RemoveResources(UpgradeCosts[i]);
             }
             OnUpgrade();
+            return true;
         }
         else
         {
             //passiert wenn Upgrade fehlschlägt
             Debug.Log("Too expensive /@" +  ProductionResource.ToString());
+            return false;
         }
     }
 
     private void OnUpgrade()
     {
         HouseLevel++;
-        if(ProductionResource.Equals(ResourceType.COAL) || ProductionResource.Equals(ResourceType.PEOPLE))
+        if(ProductionResource.Equals(ResourceType.COAL))
         {
             resource.AddResources(ResourceGenerationFormula());
         }
+        gameManager.GainPopulation(PopulationGainOnUpgrade);
         ChangeUpgradeCosts();
     }
 

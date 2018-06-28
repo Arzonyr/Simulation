@@ -4,12 +4,24 @@ using UnityEngine;
 
 public class GameManagerScript : MonoBehaviour {
 
+    [HideInInspector]
     public List<House> Houses = new List<House>();
+    [HideInInspector]
     public List<Resource> Resources = new List<Resource>();
+    [HideInInspector]
+    public PopulationManager Population;
+    [HideInInspector]
+    public Upgrader HouseUpgrader;
     public float TimeBetweenResourceCollection = 5;
+    public int[] PopulationMilestones;
+    public LayerMask HouseLayer;
+    public Animator UpgradePanelAnimator;
     public AudioSource BackgroundMusicSource;
     public AudioClip BackgroundMusic;
     public bool Pause = false;
+
+    private bool upgradePanelEnabled = false;
+    private int reachedMilestones = 0;
 
 	void Start ()
     {
@@ -20,15 +32,26 @@ public class GameManagerScript : MonoBehaviour {
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.P)) Pause = !Pause;
-        if (Input.GetKeyDown(KeyCode.U) && !Pause) TryUpgradeAll();
-        
-    }
 
-    private void TryUpgradeAll()
-    {
-        foreach (var house in Houses)
+        if (Input.GetButtonDown("Fire1"))
         {
-            house.UpgradeHouse();
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit rayHit;
+            if (Physics.Raycast(ray,out rayHit,100,HouseLayer))
+            {
+                if(rayHit.collider.tag != "OverlayButton")
+                {
+                    HouseUpgrader.CurrentlyClicked = rayHit.collider.GetComponent<House>();
+                    HouseUpgrader.OnHouseSelected();
+                    UpgradePanelAnimator.SetTrigger("New Trigger");
+                    upgradePanelEnabled = true;
+                }
+            }
+            else if(upgradePanelEnabled == true)
+            {
+                HouseUpgrader.OnHouseDeselected();
+                upgradePanelEnabled = false;
+            }
         }
     }
 
@@ -74,7 +97,11 @@ public class GameManagerScript : MonoBehaviour {
             case MyMonoBehaviour.ScriptType.RESOURCE:
                 Resources.Add((Resource)Script);
                 break;
+            case MyMonoBehaviour.ScriptType.UPGRADER:
+                HouseUpgrader = (Upgrader)Script;
+                break;
             default:
+                Debug.LogError("unspecified script detected");
                 break;
         }
     }
@@ -87,6 +114,16 @@ public class GameManagerScript : MonoBehaviour {
             BackgroundMusicSource.Play();
         }
         else Debug.Log("No background music found.");
+    }
+
+    public void GainPopulation(int amount)
+    {
+        Population.AddResources(amount);
+        if(reachedMilestones < PopulationMilestones.Length && Population.Amount >= PopulationMilestones[reachedMilestones])
+        {
+            reachedMilestones++;
+            Population.LevelUp();
+        }
     }
 
 }

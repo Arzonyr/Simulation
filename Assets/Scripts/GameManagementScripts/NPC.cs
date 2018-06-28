@@ -6,8 +6,9 @@ using System.Collections;
 
 public class NPC : MonoBehaviour
 {
-
+    [HideInInspector]
     public Transform[] points;
+    [HideInInspector]
     public GameObject[] wayPoints;
     private int destPoint = 0;
     private NavMeshAgent agent;
@@ -21,7 +22,6 @@ public class NPC : MonoBehaviour
         {
             points[i] = wayPoints[Random.Range(0,7)].transform;
         }
-     
         
         agent.autoBraking = false;
 
@@ -34,19 +34,14 @@ public class NPC : MonoBehaviour
         if (points.Length == 0)
             return;
 
-       
         agent.destination = points[destPoint].position;
 
-      
-      
         destPoint = (destPoint + 1) % points.Length;
     }
 
 
     void Update()
     {
-        
-       
         if (!agent.pathPending && agent.remainingDistance < 0.5f)
             GotoNextPoint();
     }
