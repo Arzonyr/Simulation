@@ -578,6 +578,7 @@ GameObject:
   - component: {fileID: 61458478}
   - component: {fileID: 61458477}
   - component: {fileID: 61458476}
+  - component: {fileID: 61458479}
   m_Layer: 0
   m_Name: house_lvl4 (3)
   m_TagString: Untagged
@@ -662,6 +663,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 61458474}
   m_Mesh: {fileID: 4300000, guid: c1491311318644f4686d01746b0851bf, type: 3}
+--- !u!208 &61458479
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 61458474}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.25100002, y: 0.202, z: 0.15300001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.2, z: 0.003}
+  m_TimeToStationary: 0.5
 --- !u!1 &63132142
 GameObject:
   m_ObjectHideFlags: 0
@@ -674,6 +690,7 @@ GameObject:
   - component: {fileID: 63132146}
   - component: {fileID: 63132145}
   - component: {fileID: 63132144}
+  - component: {fileID: 63132147}
   m_Layer: 0
   m_Name: house_lvl4
   m_TagString: Untagged
@@ -758,6 +775,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 63132142}
   m_Mesh: {fileID: 4300000, guid: c1491311318644f4686d01746b0851bf, type: 3}
+--- !u!208 &63132147
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 63132142}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.25100002, y: 0.202, z: 0.15300001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.2, z: 0.003}
+  m_TimeToStationary: 0.5
 --- !u!1 &69462131
 GameObject:
   m_ObjectHideFlags: 0
@@ -1140,6 +1172,7 @@ GameObject:
   - component: {fileID: 94022296}
   - component: {fileID: 94022295}
   - component: {fileID: 94022294}
+  - component: {fileID: 94022297}
   m_Layer: 0
   m_Name: house_lvl4 (14)
   m_TagString: Untagged
@@ -1224,6 +1257,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 94022292}
   m_Mesh: {fileID: 4300000, guid: c1491311318644f4686d01746b0851bf, type: 3}
+--- !u!208 &94022297
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 94022292}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.25100002, y: 0.202, z: 0.15300001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.2, z: 0.003}
+  m_TimeToStationary: 0.5
 --- !u!1 &99872291
 GameObject:
   m_ObjectHideFlags: 0
@@ -1479,6 +1527,7 @@ GameObject:
   - component: {fileID: 112750946}
   - component: {fileID: 112750945}
   - component: {fileID: 112750944}
+  - component: {fileID: 112750947}
   m_Layer: 0
   m_Name: house_lvl7 (11)
   m_TagString: Untagged
@@ -1563,6 +1612,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 112750942}
   m_Mesh: {fileID: 4300000, guid: f727ded922603934b962032566006696, type: 3}
+--- !u!208 &112750947
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 112750942}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.279, y: 0.35700002, z: 0.24300002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.030000001, y: 0.35700002, z: 0.025}
+  m_TimeToStationary: 0.5
 --- !u!1 &114237285
 GameObject:
   m_ObjectHideFlags: 0
@@ -3202,6 +3266,7 @@ GameObject:
   - component: {fileID: 230152542}
   - component: {fileID: 230152541}
   - component: {fileID: 230152540}
+  - component: {fileID: 230152543}
   m_Layer: 0
   m_Name: farm_house_lvl2
   m_TagString: Untagged
@@ -3286,6 +3351,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 230152538}
   m_Mesh: {fileID: 4300000, guid: 30a345e5ee05a4c43af344fe72769488, type: 3}
+--- !u!208 &230152543
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 230152538}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.19700001, y: 0.162, z: 0.15}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.162, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &233530771
 GameObject:
   m_ObjectHideFlags: 0
@@ -3637,6 +3717,7 @@ GameObject:
   - component: {fileID: 248945376}
   - component: {fileID: 248945375}
   - component: {fileID: 248945374}
+  - component: {fileID: 248945377}
   m_Layer: 0
   m_Name: house_lvl7 (4)
   m_TagString: Untagged
@@ -3721,6 +3802,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 248945372}
   m_Mesh: {fileID: 4300000, guid: f727ded922603934b962032566006696, type: 3}
+--- !u!208 &248945377
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 248945372}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.279, y: 0.35700002, z: 0.24300002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.030000001, y: 0.35700002, z: 0.025}
+  m_TimeToStationary: 0.5
 --- !u!1 &250470064
 GameObject:
   m_ObjectHideFlags: 0
@@ -4133,6 +4229,7 @@ GameObject:
   - component: {fileID: 275818452}
   - component: {fileID: 275818451}
   - component: {fileID: 275818450}
+  - component: {fileID: 275818453}
   m_Layer: 0
   m_Name: farm_house_lvl2 (12)
   m_TagString: Untagged
@@ -4217,6 +4314,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 275818448}
   m_Mesh: {fileID: 4300000, guid: 30a345e5ee05a4c43af344fe72769488, type: 3}
+--- !u!208 &275818453
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 275818448}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.19700001, y: 0.162, z: 0.15}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.162, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &282129648
 GameObject:
   m_ObjectHideFlags: 0
@@ -4767,6 +4879,7 @@ GameObject:
   - component: {fileID: 290243921}
   - component: {fileID: 290243920}
   - component: {fileID: 290243919}
+  - component: {fileID: 290243922}
   m_Layer: 0
   m_Name: house_lvl7 (3)
   m_TagString: Untagged
@@ -4851,6 +4964,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 290243917}
   m_Mesh: {fileID: 4300000, guid: f727ded922603934b962032566006696, type: 3}
+--- !u!208 &290243922
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 290243917}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.279, y: 0.35700002, z: 0.24300002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.030000001, y: 0.35700002, z: 0.025}
+  m_TimeToStationary: 0.5
 --- !u!1 &291008753
 GameObject:
   m_ObjectHideFlags: 0
@@ -5207,6 +5335,7 @@ GameObject:
   - component: {fileID: 320740075}
   - component: {fileID: 320740074}
   - component: {fileID: 320740073}
+  - component: {fileID: 320740076}
   m_Layer: 0
   m_Name: house_lvl4 (6)
   m_TagString: Untagged
@@ -5291,6 +5420,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 320740071}
   m_Mesh: {fileID: 4300000, guid: c1491311318644f4686d01746b0851bf, type: 3}
+--- !u!208 &320740076
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 320740071}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.25100002, y: 0.202, z: 0.15300001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.2, z: 0.003}
+  m_TimeToStationary: 0.5
 --- !u!1 &321240550
 GameObject:
   m_ObjectHideFlags: 0
@@ -7192,6 +7336,7 @@ GameObject:
   - component: {fileID: 431485760}
   - component: {fileID: 431485759}
   - component: {fileID: 431485758}
+  - component: {fileID: 431485761}
   m_Layer: 0
   m_Name: farm_house_lvl2 (14)
   m_TagString: Untagged
@@ -7276,6 +7421,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 431485756}
   m_Mesh: {fileID: 4300000, guid: 30a345e5ee05a4c43af344fe72769488, type: 3}
+--- !u!208 &431485761
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 431485756}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.19700001, y: 0.162, z: 0.15}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.162, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &436791287
 GameObject:
   m_ObjectHideFlags: 0
@@ -7460,6 +7620,7 @@ GameObject:
   - component: {fileID: 445825207}
   - component: {fileID: 445825206}
   - component: {fileID: 445825205}
+  - component: {fileID: 445825208}
   m_Layer: 0
   m_Name: farm_house_lvl2 (6)
   m_TagString: Untagged
@@ -7544,6 +7705,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 445825203}
   m_Mesh: {fileID: 4300000, guid: 30a345e5ee05a4c43af344fe72769488, type: 3}
+--- !u!208 &445825208
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 445825203}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.19700001, y: 0.162, z: 0.15}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.162, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &447403508
 GameObject:
   m_ObjectHideFlags: 0
@@ -10003,6 +10179,7 @@ GameObject:
   - component: {fileID: 592815165}
   - component: {fileID: 592815164}
   - component: {fileID: 592815163}
+  - component: {fileID: 592815166}
   m_Layer: 0
   m_Name: house_lvl4 (4)
   m_TagString: Untagged
@@ -10087,6 +10264,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 592815161}
   m_Mesh: {fileID: 4300000, guid: c1491311318644f4686d01746b0851bf, type: 3}
+--- !u!208 &592815166
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 592815161}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.25100002, y: 0.202, z: 0.15300001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.2, z: 0.003}
+  m_TimeToStationary: 0.5
 --- !u!1 &627220118
 GameObject:
   m_ObjectHideFlags: 0
@@ -10929,6 +11121,7 @@ GameObject:
   - component: {fileID: 680577718}
   - component: {fileID: 680577717}
   - component: {fileID: 680577716}
+  - component: {fileID: 680577719}
   m_Layer: 0
   m_Name: house_lvl4 (5)
   m_TagString: Untagged
@@ -11013,6 +11206,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 680577714}
   m_Mesh: {fileID: 4300000, guid: c1491311318644f4686d01746b0851bf, type: 3}
+--- !u!208 &680577719
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 680577714}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.25100002, y: 0.202, z: 0.15300001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.2, z: 0.003}
+  m_TimeToStationary: 0.5
 --- !u!1 &681142000
 GameObject:
   m_ObjectHideFlags: 0
@@ -11028,7 +11236,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &681142001
 Transform:
   m_ObjectHideFlags: 0
@@ -11536,6 +11744,7 @@ GameObject:
   - component: {fileID: 712606244}
   - component: {fileID: 712606243}
   - component: {fileID: 712606242}
+  - component: {fileID: 712606245}
   m_Layer: 0
   m_Name: farm_house_lvl2 (15)
   m_TagString: Untagged
@@ -11620,6 +11829,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 712606240}
   m_Mesh: {fileID: 4300000, guid: 30a345e5ee05a4c43af344fe72769488, type: 3}
+--- !u!208 &712606245
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 712606240}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.19700001, y: 0.162, z: 0.15}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.162, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &713892732
 GameObject:
   m_ObjectHideFlags: 0
@@ -12531,6 +12755,7 @@ GameObject:
   - component: {fileID: 808124126}
   - component: {fileID: 808124125}
   - component: {fileID: 808124124}
+  - component: {fileID: 808124127}
   m_Layer: 0
   m_Name: house_lvl7 (8)
   m_TagString: Untagged
@@ -12615,6 +12840,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 808124122}
   m_Mesh: {fileID: 4300000, guid: f727ded922603934b962032566006696, type: 3}
+--- !u!208 &808124127
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 808124122}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.279, y: 0.35700002, z: 0.24300002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.030000001, y: 0.35700002, z: 0.025}
+  m_TimeToStationary: 0.5
 --- !u!1 &810517010
 GameObject:
   m_ObjectHideFlags: 0
@@ -13465,6 +13705,7 @@ GameObject:
   - component: {fileID: 895997232}
   - component: {fileID: 895997231}
   - component: {fileID: 895997230}
+  - component: {fileID: 895997233}
   m_Layer: 0
   m_Name: house_lvl4 (8)
   m_TagString: Untagged
@@ -13549,6 +13790,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 895997228}
   m_Mesh: {fileID: 4300000, guid: c1491311318644f4686d01746b0851bf, type: 3}
+--- !u!208 &895997233
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 895997228}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.25100002, y: 0.202, z: 0.15300001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.2, z: 0.003}
+  m_TimeToStationary: 0.5
 --- !u!1 &896552523
 GameObject:
   m_ObjectHideFlags: 0
@@ -13766,6 +14022,7 @@ GameObject:
   - component: {fileID: 900369892}
   - component: {fileID: 900369891}
   - component: {fileID: 900369890}
+  - component: {fileID: 900369893}
   m_Layer: 0
   m_Name: house_lvl4 (10)
   m_TagString: Untagged
@@ -13850,6 +14107,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 900369888}
   m_Mesh: {fileID: 4300000, guid: c1491311318644f4686d01746b0851bf, type: 3}
+--- !u!208 &900369893
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 900369888}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.25100002, y: 0.202, z: 0.15300001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.2, z: 0.003}
+  m_TimeToStationary: 0.5
 --- !u!1 &901383512
 GameObject:
   m_ObjectHideFlags: 0
@@ -13862,6 +14134,7 @@ GameObject:
   - component: {fileID: 901383516}
   - component: {fileID: 901383515}
   - component: {fileID: 901383514}
+  - component: {fileID: 901383517}
   m_Layer: 0
   m_Name: house_lvl7 (6)
   m_TagString: Untagged
@@ -13946,6 +14219,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 901383512}
   m_Mesh: {fileID: 4300000, guid: f727ded922603934b962032566006696, type: 3}
+--- !u!208 &901383517
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 901383512}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.279, y: 0.35700002, z: 0.24300002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.030000001, y: 0.35700002, z: 0.025}
+  m_TimeToStationary: 0.5
 --- !u!1 &907329566
 GameObject:
   m_ObjectHideFlags: 0
@@ -14297,6 +14585,7 @@ GameObject:
   - component: {fileID: 925369498}
   - component: {fileID: 925369497}
   - component: {fileID: 925369496}
+  - component: {fileID: 925369499}
   m_Layer: 0
   m_Name: farm_house_lvl2 (3)
   m_TagString: Untagged
@@ -14381,6 +14670,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 925369494}
   m_Mesh: {fileID: 4300000, guid: 30a345e5ee05a4c43af344fe72769488, type: 3}
+--- !u!208 &925369499
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 925369494}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.19700001, y: 0.162, z: 0.15}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.162, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &926782522
 GameObject:
   m_ObjectHideFlags: 0
@@ -14866,6 +15170,7 @@ GameObject:
   - component: {fileID: 982515301}
   - component: {fileID: 982515300}
   - component: {fileID: 982515299}
+  - component: {fileID: 982515302}
   m_Layer: 0
   m_Name: farm_house_lvl2 (5)
   m_TagString: Untagged
@@ -14950,6 +15255,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 982515297}
   m_Mesh: {fileID: 4300000, guid: 30a345e5ee05a4c43af344fe72769488, type: 3}
+--- !u!208 &982515302
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 982515297}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.19700001, y: 0.162, z: 0.15}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.162, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &983516948
 GameObject:
   m_ObjectHideFlags: 0
@@ -14962,6 +15282,7 @@ GameObject:
   - component: {fileID: 983516952}
   - component: {fileID: 983516951}
   - component: {fileID: 983516950}
+  - component: {fileID: 983516953}
   m_Layer: 0
   m_Name: house_lvl7 (10)
   m_TagString: Untagged
@@ -15046,6 +15367,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 983516948}
   m_Mesh: {fileID: 4300000, guid: f727ded922603934b962032566006696, type: 3}
+--- !u!208 &983516953
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 983516948}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.279, y: 0.35700002, z: 0.24300002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.030000001, y: 0.35700002, z: 0.025}
+  m_TimeToStationary: 0.5
 --- !u!1 &989151071
 GameObject:
   m_ObjectHideFlags: 0
@@ -15231,6 +15567,7 @@ GameObject:
   - component: {fileID: 993250716}
   - component: {fileID: 993250715}
   - component: {fileID: 993250714}
+  - component: {fileID: 993250717}
   m_Layer: 0
   m_Name: farm_house_lvl2 (2)
   m_TagString: Untagged
@@ -15315,6 +15652,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 993250712}
   m_Mesh: {fileID: 4300000, guid: 30a345e5ee05a4c43af344fe72769488, type: 3}
+--- !u!208 &993250717
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 993250712}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.19700001, y: 0.162, z: 0.15}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.162, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &995467815
 GameObject:
   m_ObjectHideFlags: 0
@@ -17202,6 +17554,7 @@ GameObject:
   - component: {fileID: 1078951749}
   - component: {fileID: 1078951748}
   - component: {fileID: 1078951747}
+  - component: {fileID: 1078951750}
   m_Layer: 0
   m_Name: house_lvl4 (9)
   m_TagString: Untagged
@@ -17286,6 +17639,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1078951745}
   m_Mesh: {fileID: 4300000, guid: c1491311318644f4686d01746b0851bf, type: 3}
+--- !u!208 &1078951750
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1078951745}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.25100002, y: 0.202, z: 0.15300001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.2, z: 0.003}
+  m_TimeToStationary: 0.5
 --- !u!1 &1083080682
 GameObject:
   m_ObjectHideFlags: 0
@@ -20774,6 +21142,7 @@ GameObject:
   - component: {fileID: 1279549523}
   - component: {fileID: 1279549522}
   - component: {fileID: 1279549521}
+  - component: {fileID: 1279549524}
   m_Layer: 0
   m_Name: house_lvl7
   m_TagString: Untagged
@@ -20858,6 +21227,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1279549519}
   m_Mesh: {fileID: 4300000, guid: f727ded922603934b962032566006696, type: 3}
+--- !u!208 &1279549524
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1279549519}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.279, y: 0.35700002, z: 0.24300002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.030000001, y: 0.35700002, z: 0.025}
+  m_TimeToStationary: 0.5
 --- !u!1 &1292050683
 GameObject:
   m_ObjectHideFlags: 0
@@ -21211,6 +21595,7 @@ GameObject:
   - component: {fileID: 1323872374}
   - component: {fileID: 1323872373}
   - component: {fileID: 1323872372}
+  - component: {fileID: 1323872375}
   m_Layer: 0
   m_Name: house_lvl4 (1)
   m_TagString: Untagged
@@ -21295,6 +21680,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1323872370}
   m_Mesh: {fileID: 4300000, guid: c1491311318644f4686d01746b0851bf, type: 3}
+--- !u!208 &1323872375
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1323872370}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.25100002, y: 0.202, z: 0.15300001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.2, z: 0.003}
+  m_TimeToStationary: 0.5
 --- !u!1 &1341160795
 GameObject:
   m_ObjectHideFlags: 0
@@ -21794,6 +22194,7 @@ GameObject:
   - component: {fileID: 1358326928}
   - component: {fileID: 1358326927}
   - component: {fileID: 1358326926}
+  - component: {fileID: 1358326929}
   m_Layer: 0
   m_Name: farm_house_lvl2 (10)
   m_TagString: Untagged
@@ -21878,6 +22279,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1358326924}
   m_Mesh: {fileID: 4300000, guid: 30a345e5ee05a4c43af344fe72769488, type: 3}
+--- !u!208 &1358326929
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1358326924}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.19700001, y: 0.162, z: 0.15}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.162, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1359154424
 GameObject:
   m_ObjectHideFlags: 0
@@ -22285,6 +22701,7 @@ GameObject:
   - component: {fileID: 1419791544}
   - component: {fileID: 1419791543}
   - component: {fileID: 1419791542}
+  - component: {fileID: 1419791545}
   m_Layer: 0
   m_Name: farm_house_lvl2 (4)
   m_TagString: Untagged
@@ -22369,6 +22786,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1419791540}
   m_Mesh: {fileID: 4300000, guid: 30a345e5ee05a4c43af344fe72769488, type: 3}
+--- !u!208 &1419791545
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1419791540}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.19700001, y: 0.162, z: 0.15}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.162, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1428486318
 GameObject:
   m_ObjectHideFlags: 0
@@ -24263,6 +24695,7 @@ GameObject:
   - component: {fileID: 1610822558}
   - component: {fileID: 1610822557}
   - component: {fileID: 1610822556}
+  - component: {fileID: 1610822559}
   m_Layer: 0
   m_Name: house_lvl4 (2)
   m_TagString: Untagged
@@ -24347,6 +24780,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1610822554}
   m_Mesh: {fileID: 4300000, guid: c1491311318644f4686d01746b0851bf, type: 3}
+--- !u!208 &1610822559
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1610822554}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.25100002, y: 0.202, z: 0.15300001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.2, z: 0.003}
+  m_TimeToStationary: 0.5
 --- !u!1 &1614485907
 GameObject:
   m_ObjectHideFlags: 0
@@ -24359,6 +24807,7 @@ GameObject:
   - component: {fileID: 1614485911}
   - component: {fileID: 1614485910}
   - component: {fileID: 1614485909}
+  - component: {fileID: 1614485912}
   m_Layer: 0
   m_Name: farm_house_lvl2 (13)
   m_TagString: Untagged
@@ -24443,6 +24892,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1614485907}
   m_Mesh: {fileID: 4300000, guid: 30a345e5ee05a4c43af344fe72769488, type: 3}
+--- !u!208 &1614485912
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1614485907}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.19700001, y: 0.162, z: 0.15}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.162, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1618997622
 GameObject:
   m_ObjectHideFlags: 0
@@ -24955,6 +25419,7 @@ GameObject:
   - component: {fileID: 1646773659}
   - component: {fileID: 1646773658}
   - component: {fileID: 1646773657}
+  - component: {fileID: 1646773660}
   m_Layer: 0
   m_Name: house_lvl7 (9)
   m_TagString: Untagged
@@ -25039,6 +25504,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1646773655}
   m_Mesh: {fileID: 4300000, guid: f727ded922603934b962032566006696, type: 3}
+--- !u!208 &1646773660
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1646773655}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.279, y: 0.35700002, z: 0.24300002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.030000001, y: 0.35700002, z: 0.025}
+  m_TimeToStationary: 0.5
 --- !u!1 &1647529578
 GameObject:
   m_ObjectHideFlags: 0
@@ -26495,6 +26975,7 @@ GameObject:
   - component: {fileID: 1697924572}
   - component: {fileID: 1697924571}
   - component: {fileID: 1697924570}
+  - component: {fileID: 1697924573}
   m_Layer: 0
   m_Name: house_lvl4 (11)
   m_TagString: Untagged
@@ -26579,6 +27060,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1697924568}
   m_Mesh: {fileID: 4300000, guid: c1491311318644f4686d01746b0851bf, type: 3}
+--- !u!208 &1697924573
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1697924568}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.25100002, y: 0.202, z: 0.15300001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.2, z: 0.003}
+  m_TimeToStationary: 0.5
 --- !u!1 &1702289601
 GameObject:
   m_ObjectHideFlags: 0
@@ -27628,6 +28124,7 @@ GameObject:
   - component: {fileID: 1748566148}
   - component: {fileID: 1748566147}
   - component: {fileID: 1748566146}
+  - component: {fileID: 1748566149}
   m_Layer: 0
   m_Name: farm_house_lvl2 (9)
   m_TagString: Untagged
@@ -27712,6 +28209,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1748566144}
   m_Mesh: {fileID: 4300000, guid: 30a345e5ee05a4c43af344fe72769488, type: 3}
+--- !u!208 &1748566149
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1748566144}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.19700001, y: 0.162, z: 0.15}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.162, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1765093920
 GameObject:
   m_ObjectHideFlags: 0
@@ -27853,6 +28365,7 @@ GameObject:
   - component: {fileID: 1768781065}
   - component: {fileID: 1768781064}
   - component: {fileID: 1768781063}
+  - component: {fileID: 1768781066}
   m_Layer: 0
   m_Name: house_lvl7 (5)
   m_TagString: Untagged
@@ -27937,6 +28450,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1768781061}
   m_Mesh: {fileID: 4300000, guid: f727ded922603934b962032566006696, type: 3}
+--- !u!208 &1768781066
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1768781061}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.279, y: 0.35700002, z: 0.24300002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.030000001, y: 0.35700002, z: 0.025}
+  m_TimeToStationary: 0.5
 --- !u!1 &1774743513
 GameObject:
   m_ObjectHideFlags: 0
@@ -28218,6 +28746,7 @@ GameObject:
   - component: {fileID: 1790174324}
   - component: {fileID: 1790174323}
   - component: {fileID: 1790174322}
+  - component: {fileID: 1790174325}
   m_Layer: 0
   m_Name: house_lvl4 (13)
   m_TagString: Untagged
@@ -28302,6 +28831,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1790174320}
   m_Mesh: {fileID: 4300000, guid: c1491311318644f4686d01746b0851bf, type: 3}
+--- !u!208 &1790174325
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1790174320}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.25100002, y: 0.202, z: 0.15300001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.2, z: 0.003}
+  m_TimeToStationary: 0.5
 --- !u!1 &1809062500
 GameObject:
   m_ObjectHideFlags: 0
@@ -29901,6 +30445,7 @@ GameObject:
   - component: {fileID: 1924812001}
   - component: {fileID: 1924812000}
   - component: {fileID: 1924811999}
+  - component: {fileID: 1924812002}
   m_Layer: 0
   m_Name: house_lvl4 (7)
   m_TagString: Untagged
@@ -29985,6 +30530,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1924811997}
   m_Mesh: {fileID: 4300000, guid: c1491311318644f4686d01746b0851bf, type: 3}
+--- !u!208 &1924812002
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1924811997}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.25100002, y: 0.202, z: 0.15300001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.2, z: 0.003}
+  m_TimeToStationary: 0.5
 --- !u!1 &1937709451
 GameObject:
   m_ObjectHideFlags: 0
@@ -30508,6 +31068,7 @@ GameObject:
   - component: {fileID: 1949930237}
   - component: {fileID: 1949930236}
   - component: {fileID: 1949930235}
+  - component: {fileID: 1949930238}
   m_Layer: 0
   m_Name: house_lvl7 (2)
   m_TagString: Untagged
@@ -30592,6 +31153,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1949930233}
   m_Mesh: {fileID: 4300000, guid: f727ded922603934b962032566006696, type: 3}
+--- !u!208 &1949930238
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1949930233}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.279, y: 0.35700002, z: 0.24300002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.030000001, y: 0.35700002, z: 0.025}
+  m_TimeToStationary: 0.5
 --- !u!1 &1959896213
 GameObject:
   m_ObjectHideFlags: 0
@@ -30604,6 +31180,7 @@ GameObject:
   - component: {fileID: 1959896217}
   - component: {fileID: 1959896216}
   - component: {fileID: 1959896215}
+  - component: {fileID: 1959896218}
   m_Layer: 0
   m_Name: farm_house_lvl2 (17)
   m_TagString: Untagged
@@ -30688,6 +31265,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1959896213}
   m_Mesh: {fileID: 4300000, guid: 30a345e5ee05a4c43af344fe72769488, type: 3}
+--- !u!208 &1959896218
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1959896213}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.19700001, y: 0.162, z: 0.15}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.162, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1963848441
 GameObject:
   m_ObjectHideFlags: 0
@@ -30899,6 +31491,7 @@ GameObject:
   - component: {fileID: 1969048324}
   - component: {fileID: 1969048323}
   - component: {fileID: 1969048322}
+  - component: {fileID: 1969048325}
   m_Layer: 0
   m_Name: house_lvl7 (7)
   m_TagString: Untagged
@@ -30983,6 +31576,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1969048320}
   m_Mesh: {fileID: 4300000, guid: f727ded922603934b962032566006696, type: 3}
+--- !u!208 &1969048325
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1969048320}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.279, y: 0.35700002, z: 0.24300002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.030000001, y: 0.35700002, z: 0.025}
+  m_TimeToStationary: 0.5
 --- !u!1 &1981588676
 GameObject:
   m_ObjectHideFlags: 0
@@ -31142,6 +31750,7 @@ GameObject:
   - component: {fileID: 1987974186}
   - component: {fileID: 1987974185}
   - component: {fileID: 1987974184}
+  - component: {fileID: 1987974187}
   m_Layer: 0
   m_Name: house_lvl7 (1)
   m_TagString: Untagged
@@ -31226,6 +31835,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1987974182}
   m_Mesh: {fileID: 4300000, guid: f727ded922603934b962032566006696, type: 3}
+--- !u!208 &1987974187
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1987974182}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.279, y: 0.35700002, z: 0.24300002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.030000001, y: 0.35700002, z: 0.025}
+  m_TimeToStationary: 0.5
 --- !u!1 &1990468845
 GameObject:
   m_ObjectHideFlags: 0
@@ -31315,6 +31939,7 @@ GameObject:
   - component: {fileID: 1996377984}
   - component: {fileID: 1996377983}
   - component: {fileID: 1996377982}
+  - component: {fileID: 1996377985}
   m_Layer: 0
   m_Name: farm_house_lvl2 (11)
   m_TagString: Untagged
@@ -31399,6 +32024,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1996377980}
   m_Mesh: {fileID: 4300000, guid: 30a345e5ee05a4c43af344fe72769488, type: 3}
+--- !u!208 &1996377985
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1996377980}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.19700001, y: 0.162, z: 0.15}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.162, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1998709159
 GameObject:
   m_ObjectHideFlags: 0
@@ -31780,6 +32420,7 @@ GameObject:
   - component: {fileID: 2036551971}
   - component: {fileID: 2036551970}
   - component: {fileID: 2036551969}
+  - component: {fileID: 2036551972}
   m_Layer: 0
   m_Name: farm_house_lvl2 (7)
   m_TagString: Untagged
@@ -31864,6 +32505,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2036551967}
   m_Mesh: {fileID: 4300000, guid: 30a345e5ee05a4c43af344fe72769488, type: 3}
+--- !u!208 &2036551972
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2036551967}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.19700001, y: 0.162, z: 0.15}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.162, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &2056815272
 GameObject:
   m_ObjectHideFlags: 0
@@ -32302,6 +32958,7 @@ GameObject:
   - component: {fileID: 2086741919}
   - component: {fileID: 2086741918}
   - component: {fileID: 2086741917}
+  - component: {fileID: 2086741920}
   m_Layer: 0
   m_Name: house_lvl4 (12)
   m_TagString: Untagged
@@ -32386,6 +33043,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2086741915}
   m_Mesh: {fileID: 4300000, guid: c1491311318644f4686d01746b0851bf, type: 3}
+--- !u!208 &2086741920
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2086741915}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.25100002, y: 0.202, z: 0.15300001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.2, z: 0.003}
+  m_TimeToStationary: 0.5
 --- !u!1 &2094135949
 GameObject:
   m_ObjectHideFlags: 0
@@ -32623,6 +33295,7 @@ GameObject:
   - component: {fileID: 2111992948}
   - component: {fileID: 2111992947}
   - component: {fileID: 2111992946}
+  - component: {fileID: 2111992949}
   m_Layer: 0
   m_Name: farm_house_lvl2 (8)
   m_TagString: Untagged
@@ -32707,6 +33380,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2111992944}
   m_Mesh: {fileID: 4300000, guid: 30a345e5ee05a4c43af344fe72769488, type: 3}
+--- !u!208 &2111992949
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2111992944}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.19700001, y: 0.162, z: 0.15}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.162, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &2112152138
 GameObject:
   m_ObjectHideFlags: 0
@@ -32892,6 +33580,7 @@ GameObject:
   - component: {fileID: 2114605165}
   - component: {fileID: 2114605164}
   - component: {fileID: 2114605163}
+  - component: {fileID: 2114605166}
   m_Layer: 0
   m_Name: farm_house_lvl2 (1)
   m_TagString: Untagged
@@ -32976,6 +33665,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2114605161}
   m_Mesh: {fileID: 4300000, guid: 30a345e5ee05a4c43af344fe72769488, type: 3}
+--- !u!208 &2114605166
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2114605161}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.19700001, y: 0.162, z: 0.15}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.162, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &2120983427
 GameObject:
   m_ObjectHideFlags: 0
@@ -33248,6 +33952,7 @@ GameObject:
   - component: {fileID: 2133979489}
   - component: {fileID: 2133979488}
   - component: {fileID: 2133979487}
+  - component: {fileID: 2133979490}
   m_Layer: 0
   m_Name: farm_house_lvl2 (16)
   m_TagString: Untagged
@@ -33332,6 +34037,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2133979485}
   m_Mesh: {fileID: 4300000, guid: 30a345e5ee05a4c43af344fe72769488, type: 3}
+--- !u!208 &2133979490
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2133979485}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.19700001, y: 0.162, z: 0.15}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.162, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &2143550881
 GameObject:
   m_ObjectHideFlags: 0

@@ -21,7 +21,7 @@ public class Resource : MyMonoBehaviour {
 
     public void AddResources(int amount)
     {
-        Amount += amount;
+        Amount = Mathf.Min(amount+Amount,10000);
         UpdateOverlay();
     }
 

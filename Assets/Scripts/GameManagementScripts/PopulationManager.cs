@@ -15,6 +15,7 @@ public class PopulationManager : Resource {
         {
             Debug.LogError("the amounts of town stages has to be the same as population milestones! Otherwise the program will crash!");
         }
+        TownStages[0].SetActive(true);
     }
 
     public void LevelUp()
