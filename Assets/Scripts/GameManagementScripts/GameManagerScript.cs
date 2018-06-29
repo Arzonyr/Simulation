@@ -15,7 +15,6 @@ public class GameManagerScript : MonoBehaviour {
     public float TimeBetweenResourceCollection = 5;
     public int[] PopulationMilestones;
     public int VillagerPerPopulationAmount;
-    public GameObject[] LevelUpResources;
     public GameObject UpgradePanel;
     public AudioSource BackgroundMusicSource;
     public AudioClip BackgroundMusic;
@@ -56,6 +55,7 @@ public class GameManagerScript : MonoBehaviour {
         {
             house.CollectResource();
         }
+        CheckForUpgradePossibilities();
     }
 
     private void CollectResources(int times)
@@ -95,6 +95,14 @@ public class GameManagerScript : MonoBehaviour {
         }
     }
 
+    public void CheckForUpgradePossibilities()
+    {
+        foreach (var house in Houses)
+        {
+            house.CheckForUpgrade();
+        }
+    }
+
     private void InitializeBackgroundMusic()
     {
         if (BackgroundMusic != null && BackgroundMusicSource != null)
@@ -110,7 +118,6 @@ public class GameManagerScript : MonoBehaviour {
         Population.AddResources(amount);
         if(reachedMilestones < PopulationMilestones.Length && Population.Amount >= PopulationMilestones[reachedMilestones])
         {
-            LevelUpResources[reachedMilestones].SetActive(true);
             reachedMilestones++;
             Population.LevelUp();
         }

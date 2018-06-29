@@ -6,26 +6,15 @@ public class AktivateUpgradeButton : MonoBehaviour
 {
     public ParticleSystem Stars;
     public GameObject Sign;
-    //Hier die goals variable ein setzen, wenn goals achived ist dann OnGoalAchive() ausfuhren
-    //OnMouseDown delete...
-    // Use this for initialization
+    private bool isUp = false;
 
-    void Start()
+    public void UpgradeSignAnimation(bool up)
     {
- 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-    void OnMouseDown()
-    {
+        if (isUp == up) return;
         Sign.GetComponent<Animator>().SetTrigger("New Trigger");
         Stars.Play();
         Sign.GetComponent<Animator>().SetTrigger("New Trigger");
-        
+        isUp = !isUp;
     }
 
     void OnGoalAchive()

@@ -8,6 +8,10 @@ public class PopulationManager : Resource {
     public GameObject NPC;
     public GameObject NPCSpawnlocation;
     public GameObject[] TownStages;
+    public GameObject LevelUpParticle;
+    public GameObject LevelUpText;
+    public GameObject IronMine;
+    public GameObject Farm;
 
     public override void Start()
     {
@@ -27,20 +31,26 @@ public class PopulationManager : Resource {
             TownStages[TownLevel - 1].SetActive(false);
             TownLevel++;
             TownStages[TownLevel - 1].SetActive(true);
+
+            StartCoroutine(LevelUpAnimation());
+
             foreach (var house in gameManager.Houses)
             {
-                if (house.ProductionResource.Equals(Resource.ResourceType.COAL))
-                {
-                    Debug.Log("COAL - " + house.ProductionResource);
-                }
-                else if (house.ProductionResource.Equals(Resource.ResourceType.FOOD)) return;
-                else
-                {
-                    house.UpgradeCosts[house.UpgradeCosts.Count - (4 - TownLevel)] = 4 - TownLevel == 2 ? house.IronUpgradeCost : house.FoodUpgradeCost;
-                    Debug.Log("OTHER - " + house.ProductionResource);
-                }
+                house.ChangeUpgradeCostsWithoutMultiplier();
             }
+
+            if(TownLevel == 2) IronMine.SetActive(true);
+            else if (TownLevel == 3) Farm.SetActive(true);
         }
+    }
+
+    public IEnumerator LevelUpAnimation()
+    {
+        LevelUpParticle.SetActive(true);
+        LevelUpText.SetActive(true);
+        yield return new WaitForSeconds(seconds: LevelUpParticle.GetComponent<ParticleSystem>().duration);
+        LevelUpParticle.SetActive(false);
+        LevelUpText.SetActive(false);
     }
 
     public void SpawnNPC()

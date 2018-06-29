@@ -26,7 +26,10 @@ public class Upgrader : MyMonoBehaviour
             string temp = "Upgrade Cost:\n";
             for (int i = 0; i < CurrentlyClicked.UpgradeResourcesTypes.Count; i++)
             {
-                temp = temp + "\n" + CurrentlyClicked.UpgradeResourcesTypes[i].ToString() + ": " + CurrentlyClicked.UpgradeCosts[i];
+                if(CurrentlyClicked.UpgradeCosts[i] > 0)
+                {
+                    temp = temp + "\n" + CurrentlyClicked.UpgradeResourcesTypes[i].ToString() + ": " + CurrentlyClicked.UpgradeCosts[i];
+                }
             }
             CostsText.text = temp;
         }
@@ -48,8 +51,8 @@ public class Upgrader : MyMonoBehaviour
     public void OnClickUpgrade()
     {
         CurrentlyClicked.UpgradeHouse();
-        SetDescriptionText();
-        SetCostsText();
+        UpdateUpgradeText();
+        gameManager.CheckForUpgradePossibilities();
     }
 
     public void UpdateUpgradeText()
