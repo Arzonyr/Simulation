@@ -285,12 +285,31 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\AktivateUpgradeButton.cs" />
-    <Compile Include="Assets\Scripts\buttonScript.cs" />
-    <Compile Include="Assets\Scripts\LayerControll.cs" />
-    <Compile Include="Assets\Scripts\OnMouse.cs" />
-    <Compile Include="Assets\Scripts\PanelControllScript.cs" />
-    <Compile Include="Assets\Scripts\SignScript.cs" />
+    <Compile Include="Assets\Assests\Medieval_Toon_Character\Source\Scripts\ChangeFaces.cs" />
+    <Compile Include="Assets\Assests\Medieval_Toon_Character\Source\Scripts\Character_Animations.cs" />
+    <Compile Include="Assets\Assests\Medieval_Toon_Character\Source\Scripts\FaceAnimations.cs" />
+    <Compile Include="Assets\Assests\Medieval_Toon_Character\Source\Scripts\PlayFaceAnimations.cs" />
+    <Compile Include="Assets\Scripts\GameManagementScripts\FloorScript.cs" />
+    <Compile Include="Assets\Scripts\GameManagementScripts\GameManagerScript.cs" />
+    <Compile Include="Assets\Scripts\GameManagementScripts\House.cs" />
+    <Compile Include="Assets\Scripts\GameManagementScripts\MyMonoBehaviour.cs" />
+    <Compile Include="Assets\Scripts\GameManagementScripts\NPC.cs" />
+    <Compile Include="Assets\Scripts\GameManagementScripts\PopulationManager.cs" />
+    <Compile Include="Assets\Scripts\GameManagementScripts\Resource.cs" />
+    <Compile Include="Assets\Scripts\GameManagementScripts\Upgrader.cs" />
+    <Compile Include="Assets\Scripts\UIScripts\AktivateUpgradeButton.cs" />
+    <Compile Include="Assets\Scripts\UIScripts\BackButtonScript.cs" />
+    <Compile Include="Assets\Scripts\UIScripts\buttonScript.cs" />
+    <Compile Include="Assets\Scripts\UIScripts\ButtonStartGame.cs" />
+    <Compile Include="Assets\Scripts\UIScripts\CreditsScript.cs" />
+    <Compile Include="Assets\Scripts\UIScripts\LayerControll.cs" />
+    <Compile Include="Assets\Scripts\UIScripts\OnMouse.cs" />
+    <Compile Include="Assets\Scripts\UIScripts\PanelControllScript.cs" />
+    <Compile Include="Assets\Scripts\UIScripts\QuitScript.cs" />
+    <Compile Include="Assets\Scripts\UIScripts\SignScript.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Assests\Medieval_Toon_Character\ReadMe.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
