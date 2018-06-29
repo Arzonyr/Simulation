@@ -168,6 +168,7 @@ public class House : MyMonoBehaviour {
     
     public void CheckForUpgrade()
     {
+        if (signActivator == null) signActivator = GetComponent<AktivateUpgradeButton>();
         signActivator.UpgradeSignAnimation(TryUpgrade());
     }
 
