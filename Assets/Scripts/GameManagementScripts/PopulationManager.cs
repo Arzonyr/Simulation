@@ -13,6 +13,8 @@ public class PopulationManager : Resource {
     public GameObject IronMine;
     public GameObject Farm;
 
+    private AudioSource LevelUpAudio;
+
     public override void Start()
     {
         base.Start();
@@ -22,6 +24,7 @@ public class PopulationManager : Resource {
             Debug.LogError("the amounts of town stages has to be exactly one fewer then population milestones! Otherwise the program will crash!");
         }
         TownStages[0].SetActive(true);
+        LevelUpAudio = LevelUpParticle.GetComponent<AudioSource>();
     }
 
     public void LevelUp()
@@ -48,6 +51,8 @@ public class PopulationManager : Resource {
     {
         LevelUpParticle.SetActive(true);
         LevelUpText.SetActive(true);
+        LevelUpAudio.clip = gameManager.LevelUpAudioClip;
+        LevelUpAudio.Play();
         yield return new WaitForSeconds(seconds: LevelUpParticle.GetComponent<ParticleSystem>().duration);
         LevelUpParticle.SetActive(false);
         LevelUpText.SetActive(false);

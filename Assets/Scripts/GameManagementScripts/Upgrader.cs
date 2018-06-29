@@ -8,6 +8,7 @@ public class Upgrader : MyMonoBehaviour
     public Text DescriptionText;
     public Text CostsText;
     public House CurrentlyClicked;
+    public AudioSource OnUpgradePlay;
 
     public void SetDescriptionText()
     {
@@ -50,7 +51,11 @@ public class Upgrader : MyMonoBehaviour
 
     public void OnClickUpgrade()
     {
-        CurrentlyClicked.UpgradeHouse();
+        if (CurrentlyClicked.UpgradeHouse())
+        {
+            OnUpgradePlay.clip = gameManager.OnUpgradeClip;
+            OnUpgradePlay.Play();
+        }
         UpdateUpgradeText();
         gameManager.CheckForUpgradePossibilities();
     }

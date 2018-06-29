@@ -303,7 +303,6 @@
     <Compile Include="Assets\Scripts\UIScripts\ButtonStartGame.cs" />
     <Compile Include="Assets\Scripts\UIScripts\CreditsScript.cs" />
     <Compile Include="Assets\Scripts\UIScripts\LayerControll.cs" />
-    <Compile Include="Assets\Scripts\UIScripts\OnMouse.cs" />
     <Compile Include="Assets\Scripts\UIScripts\PanelControllScript.cs" />
     <Compile Include="Assets\Scripts\UIScripts\QuitScript.cs" />
     <Compile Include="Assets\Scripts\UIScripts\SignScript.cs" />

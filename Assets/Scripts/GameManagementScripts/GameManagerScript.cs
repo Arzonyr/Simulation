@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManagerScript : MonoBehaviour {
 
@@ -18,6 +19,9 @@ public class GameManagerScript : MonoBehaviour {
     public GameObject UpgradePanel;
     public AudioSource BackgroundMusicSource;
     public AudioClip BackgroundMusic;
+    public AudioClip LevelUpAudioClip;
+    public AudioClip OnUpgradeClip;
+    public Slider VolumeSlider;
     public int ResourceCheat;
     public bool Pause = false;
 
@@ -126,6 +130,10 @@ public class GameManagerScript : MonoBehaviour {
             NPCCount++;
             Population.SpawnNPC();
         }
+    }
+    public void OnVolumeChange()
+    {
+        BackgroundMusicSource.volume = VolumeSlider.value;
     }
 
 }
